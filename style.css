@@ -8,7 +8,6 @@
 
 .row{
     border: 1px solid blue;
-    height: 100%;
 }
 
 .col-10{
@@ -17,7 +16,7 @@
 }
 
 .slider_wrapper{
-    height: 100%;
+    height: 600px;
 }
 
 .item{
@@ -28,6 +27,8 @@
     display: block;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .col-2{

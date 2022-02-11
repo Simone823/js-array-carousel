@@ -10,9 +10,10 @@ body{
     transform: translateY(-50%) translateX(-50%);
 }
 
-/* .row{
-    border: 1px solid blue;
-} */
+.row{
+    /* border: 1px solid blue; */
+    width: 100%;
+}
 
 .col-10{
     /* border: 1px dashed magenta; */

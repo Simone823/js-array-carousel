@@ -1,3 +1,7 @@
+body{
+    background-color: #193737;
+}
+
 .container{
     /* border: 2px solid orange; */
     position: absolute;
@@ -6,12 +10,12 @@
     transform: translateY(-50%) translateX(-50%);
 }
 
-.row{
+/* .row{
     border: 1px solid blue;
-}
+} */
 
 .col-10{
-    border: 1px dashed magenta;
+    /* border: 1px dashed magenta; */
     padding: 0;
 }
 
@@ -33,7 +37,7 @@
 }
 
 .col-2{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 0;
 }
 
@@ -44,7 +48,7 @@
 
 .control_item{
     height: calc(100% / 5);
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 .control_item img{
@@ -99,6 +103,7 @@
 
 .active-control{
     opacity: 1;
+    border: 2px solid white;
 }
 
 .active{

@@ -21,6 +21,7 @@
 
 .item{
     height: 100%;
+    display: none;
 }
 
 .item img{
@@ -43,6 +44,7 @@
 
 .control_item{
     height: calc(100% / 5);
+    opacity: 0.4;
 }
 
 .control_item img{
@@ -61,6 +63,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 15px 0;
+    z-index: 1;
 }
 
 .arrow-up{
@@ -93,3 +96,11 @@
     font-size: 30px;
 }
 
+
+.active-control{
+    opacity: 1;
+}
+
+.active{
+    display: block;
+}

@@ -111,3 +111,9 @@ body{
 .active{
     display: block;
 }
+
+.arrow-up:hover,
+.arrow-down:hover{
+    transform: scale(1.2);
+    transition: transform 120ms linear;
+}

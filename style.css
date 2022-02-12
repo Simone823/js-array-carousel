@@ -18,6 +18,7 @@ body{
 .col-10{
     /* border: 1px dashed magenta; */
     padding: 0;
+    position: relative;
 }
 
 .slider_wrapper{
@@ -116,4 +117,12 @@ body{
 .arrow-down:hover{
     transform: scale(1.2);
     transition: transform 120ms linear;
+}
+
+.description{
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 8px;
+    text-align: end;
 }

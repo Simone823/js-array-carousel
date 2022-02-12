@@ -8,6 +8,22 @@ const items = [
 ];
 console.log(items);
 
+const title = [
+    'Svezia',
+    'Svizzera',
+    'Gran Bretagna',
+    'Germania',
+    'Paradise'
+];
+
+const text = [
+    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.',
+    'Lorem ipsum',
+    'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
+    'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
+];
+
 // Indice corrente immagine 
 let imgCurrent = 0;
 
@@ -37,6 +53,36 @@ for (let i = 0; i < items.length; i++) {
     // Appendo le immagini al div item
     sliderItem.append(sliderImg);
     console.log(sliderItem);
+
+    // Creo un div con classe description
+    const divDescription = document.createElement("div");
+    divDescription.classList.add("description");
+    console.log(divDescription);
+
+    // Appendo divDescription dentro sliderItem
+    sliderItem.append(divDescription);
+
+    // Creo il tag h1 con classe title
+    const titleItem = document.createElement("h1");
+    titleItem.classList.add("title-item");
+    console.log(titleItem);
+  
+    // Appendo title dentro divDescription
+    divDescription.append(titleItem);
+  
+    // Aggiungo il titolo nel tag h1 title
+    titleItem.append(title[i]);
+
+    // Creo il tag p con classe testo
+    const testo = document.createElement("p");
+    testo.classList.add("testo");
+    console.log(testo);
+
+    // Appendo il testo dentro divDescription
+    divDescription.append(testo);
+
+    // Aggiungo all'interno del tag p il testo dell'array text
+    testo.append(text[i]);
 
     if (imgCurrent == i){
         sliderItem.classList.add("active");
